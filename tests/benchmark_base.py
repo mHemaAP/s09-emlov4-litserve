@@ -22,7 +22,7 @@ from src.models.cat_dog_classifier import CatDogClassifier
 
 # Constants
 SERVER_URL = "http://localhost:8000/predict"
-TEST_IMAGE_URL = 'https://raw.githubusercontent.com/ajithvcoder/emlo4-session-09-ajithvcoder/refs/heads/main/assets/cat_for_test.jpg'
+TEST_IMAGE_URL = 'https://github.com/mHemaAP/s09-emlov4-litserve/blob/main/assets/cat_for_test.jpg'
 
 def get_baseline_throughput(batch_size, num_iterations=10):
     """Calculate baseline model throughput without API overhead"""

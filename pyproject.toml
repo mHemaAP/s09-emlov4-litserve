@@ -1,5 +1,5 @@
 [project]
-name = "emlo4-session-07-ajithvcoder"
+name = "s09-emlov4-litserve"
 version = "0.1.0"
 description = "Use lightning to hparamsearch, train, eval and infer a dataset"
 readme = "README.md"

@@ -10,7 +10,7 @@ from PIL import Image
 
 def test_single_image():
     # Get test image
-    url = 'https://raw.githubusercontent.com/ajithvcoder/emlo4-session-09-ajithvcoder/refs/heads/main/assets/cat_for_test.jpg'
+    url = 'https://github.com/mHemaAP/s09-emlov4-litserve/blob/main/assets/cat_for_test.jpg'
     img_data = urlopen(url).read()
     
     # img_path = "data/cats_and_dogs_filtered/test/cats/cat.2149.jpg"

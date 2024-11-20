@@ -4,5 +4,5 @@ comet:
   _target_: lightning.pytorch.loggers.CometLogger
   save_dir: "${paths.output_dir}"
   experiment_name: "${paths.output_dir}_${now:%Y-%m-%d_%H-%M-%S}"
-  api_key: "UgONbshAXG3o9dokRZRlHYERP"
-  workspace: "ajithvcoder"
+  api_key: "RtcjzxoOJfpx2sLFpBVZ04yfG"
+  workspace: "s09-emlov4-litserve"
