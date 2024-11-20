@@ -23,8 +23,6 @@ import torch
 # checkpoint = "meta-llama/Llama-2-7b-hf"
 # checkpoint = "meta-llama/Meta-Llama-3-8B-Instruct"
 checkpoint = "unsloth/Llama-3.2-1B-Instruct"
-# HF_TOKEN = "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"
-# HF_TOKEN = "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"
 HF_TOKEN ="<ADD API KEY>"
 # Initialize tokenizer and model
 device = "cuda"
