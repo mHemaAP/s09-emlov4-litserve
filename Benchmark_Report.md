@@ -2,11 +2,23 @@
 
 GPU: g4dn.xlarge 16 GB RAM T4 - cuda 12.4
 
-**Experiment Explanation**:
+### Experiment Explanation:
 
-In this series of experiments, server and client configurations were optimized incrementally to improve throughput and reduce bottlenecks in deploying a Cat-Dog/Dog-Breed classifier with LitServe. **Experiment 1** served as a baseline with no batching or worker configurations, yielding suboptimal GPU and CPU utilization due to lack of concurrency. **Experiment 2** introduced batch processing, slightly improving throughput as the server began to handle requests more efficiently by aggregating them. Adding workers (**Experiment 3**) significantly boosted performance by parallelizing request processing, leveraging multi-core CPU resources. Transitioning to float16 precision (**Experiment 4**) further optimized GPU utilization and throughput by reducing computational overhead, though with some trade-offs in single-threaded performance. Tuning batch timeout (**Experiment 5**) and max batch size (**Experiment 6**) refined batching behavior, leading to a balance between throughput and latency. Overall, the incremental optimizations showcased progressive utilization of hardware capabilities, with GPU and CPU reaching near-maximum efficiencies at higher concurrency levels and tuned configurations.
+In this series of experiments, server and client configurations were optimized incrementally to improve throughput and reduce bottlenecks in deploying a Cat-Dog/Dog-Breed classifier with LitServe. 
 
-**Theoretical Maximum Throughput**
+**Experiment 1** served as a baseline with no batching or worker configurations, yielding suboptimal GPU and CPU utilization due to lack of concurrency. 
+
+**Experiment 2** introduced batch processing, slightly improving throughput as the server began to handle requests more efficiently by aggregating them. 
+
+**Experiment 3** Adding workers significantly boosted performance by parallelizing request processing, leveraging multi-core CPU resources. 
+
+**Experiment 4** Transitioning to float16 precision further optimized GPU utilization and throughput by reducing computational overhead, though with some trade-offs in single-threaded performance. 
+
+**Experiment 5** Tuning batch timeout 
+
+**Experiment 6** max batch size refined batching behavior, leading to a balance between throughput and latency. Overall, the incremental optimizations showcased progressive utilization of hardware capabilities, with GPU and CPU reaching near-maximum efficiencies at higher concurrency levels and tuned configurations.
+
+### Theoretical Maximum Throughput
 
 The theoretical maximum throughput represents the upper bound of requests per second that a server can process under ideal conditions. It is determined by:
 
